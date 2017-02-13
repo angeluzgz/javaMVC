@@ -18,8 +18,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.companyname.springapp.service.ProductManager;
 
-
-
 @Controller
 public class InventoryController {
 
@@ -27,12 +25,12 @@ public class InventoryController {
 
     @Autowired
     private ProductManager productManager;
-
-    @RequestMapping(value="/hello.html")
+    
+    @RequestMapping(value="/hello.htm")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-    	String now = (new Date()).toString();
+        String now = (new Date()).toString();
         logger.info("Returning hello view with " + now);
 
         Map<String, Object> myModel = new HashMap<String, Object>();
@@ -41,8 +39,7 @@ public class InventoryController {
 
         return new ModelAndView("hello", "model", myModel);
     }
-
-
+    
     public void setProductManager(ProductManager productManager) {
         this.productManager = productManager;
     }

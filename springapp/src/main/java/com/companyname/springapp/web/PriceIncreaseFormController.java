@@ -17,7 +17,7 @@ import com.companyname.springapp.service.PriceIncrease;
 import com.companyname.springapp.service.ProductManager;
 
 @Controller
-@RequestMapping(value="/priceincrease.html")
+@RequestMapping(value="/priceincrease.htm")
 public class PriceIncreaseFormController {
 
     /** Logger for this class and subclasses */
@@ -38,7 +38,7 @@ public class PriceIncreaseFormController {
 
         productManager.increasePrice(increase);
 
-        return "redirect:/hello.html";
+        return "redirect:/hello.htm";
     }
 
     @RequestMapping(method = RequestMethod.GET)
@@ -57,3 +57,4 @@ public class PriceIncreaseFormController {
     }
 
 }
+

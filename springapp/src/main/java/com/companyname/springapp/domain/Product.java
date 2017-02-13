@@ -1,7 +1,6 @@
 package com.companyname.springapp.domain;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,7 +31,7 @@ public class Product implements Serializable {
     {
         this.id = id;
     } 
-
+    
     public String getDescription() {
         return description;
     }

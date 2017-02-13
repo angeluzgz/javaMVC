@@ -14,7 +14,7 @@ import com.companyname.springapp.domain.Product;
 
 public class JPAProductDaoTests {
 
-    private ApplicationContext context;
+	private ApplicationContext context; 
     private ProductDao productDao;
 
     @Before
