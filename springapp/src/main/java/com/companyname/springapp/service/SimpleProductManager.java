@@ -1,4 +1,4 @@
-package com.companyname.springapp.service;
+ package com.companyname.springapp.service;
 
 import java.util.List;
 
